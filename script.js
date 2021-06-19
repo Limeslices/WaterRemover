@@ -4,7 +4,7 @@ const button = document.querySelector('button');
 const stay = document.querySelector('p.stay');
 var html = `<i class="fas fa-sync fa-spin"></i> Extracting Water...`;
 
-var audioCtx = new(window.AudioContext || window.webkitAudioContext)();
+var audioCtx = new(window.webkitAudioContext || window.webkitAudioContext)();
 
 function playanimation() {
   n=button.classList;
