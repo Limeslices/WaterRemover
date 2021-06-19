@@ -26,6 +26,6 @@ function playNote() {
     function() {
       button.disabled = false
       button.innerHTML = `Extract Water`;
-    }, duration * 1000);
+    }, 10.53 * 1000);
 
 }
