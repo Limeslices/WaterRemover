@@ -20,12 +20,14 @@ function playNote() {
  
   // create Oscillator node
   var audio = new Audio('165.mp3');
+  var ding = new Audio('ding.mp3');
   audio.play();
-
+ 
   setTimeout(
     function() {
+      ding.play();
       button.disabled = false
       button.innerHTML = `Extract Water`;
-    }, 10.53 * 1000);
+    }, 10 * 1000);
 
 }
