@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+body {
+    margin: 0;
+    background-color:  #2A2D32;
+    font-family: 'Fredoka One', cursive;
+}
+
+main {
+
+}
+
+.viewport {
+    height: 100vh;
+    width: auto;
+}
+
+h1 {
+    font-size: 4em;
+    color: #c4d9e7;
+    text-shadow: 0px 4px black;
+
+}
+h2 {
+    color: #c4d9e7;
+    text-shadow: 0px 4px black;
+}
+h3 {
+    color: #c4d9e7;
+}
+
+p {
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+p span {
+    color:rgb(0, 255, 76);
+}
+ul li {
+    margin-right: 10px;
+    color: rgb(255, 255, 255);
+    text-align: left;
+}
+
+a {
+    color: rgb(178, 255, 201);;
+    text-decoration: none;
+}
+
+button {
+    background-color: #2A2D32;
+    border: 3px solid #AAE1E9;
+    border-radius: 5px;
+    color: white;
+    padding: 15px;
+    margin: 0 auto;
+    display: block;
+    font-size: 1.5em;
+    box-shadow: 0px 3px rgb(25, 25, 32);
+    text-shadow: 2px 3px 5px rgba(0,0,0,0.5);
+    
+}
+
+button:hover, button:active{
+    background-color: #181a1d;
+
+    border: 3px solid #a1c6cc;
+  }
+.center {
+    margin: auto;
+    width: 50%;
+}
+.stay {
+    margin-top: 4em;
+    display: none;
+}
+.small {
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    text-align: center;
+}
+
+#title {
+    text-align: center;
+}
+
+.water {
+    width: 100%;
+    height : 25%;
+    margin-top: -40px;
+    margin-bottom: px;
+   display: block;
+}
+.bottom {
+    display: flex;
+    margin: auto;
+    width: 50%;
+    justify-content: center;
+    flex-direction: column;
+}
+.bottom-text {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+}
+.bottom-text h2 {
+    
+    text-align: center;
+    margin-bottom: 20px;
+}
+.bottom-text p {
+    
+    font-size: 1.5em;
+}
+.questions {
+    flex: 1;
+    background-color: #AAE1E9;
+    border: white 3px solid;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 6px 10px rgba(255, 255, 255, 0.08), 0 0 6px rgba(0,0,0,.05);
+}
+
+.questions h3 {
+    color: rgb(178, 255, 201);
+    text-shadow: 2px 3px 5px rgba(0,0,0,0.9);
+}
+.questions p {
+    color: rgb(65, 65, 65);
+    font-size: 1.2em;
+    text-shadow: 2px 3px 5px rgba(0,0,0,0.5);
+}
+
+@media only screen and (min-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+    button {
+        background-color: #2A2D32;
+        border: 3px solid #AAE1E9;
+        border-radius: 5px;
+        color: rgb(255, 255, 255);
+        padding: 15px;
+        margin: 0 auto;
+        display: block;
+        font-size: 1.5em;
+        box-shadow: 0px 3px rgb(25, 25, 32);
+        margin-bottom: 10vh;
+    }
+    .bottom-text {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 300px;
+        margin: auto;
+    }
+    .water {
+        margin-top: 40px;
+    }
+
+  }
