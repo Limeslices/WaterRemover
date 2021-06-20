@@ -10,15 +10,16 @@ main {
 display: flex;
 flex-direction: column;
 flex-wrap: wrap;
-row-gap: 100px;
+margin-bottom: 100px;
 }
 
 .viewport {
     display: flex;
     flex-direction: column;
-     row-gap: 48px;
 }
-
+.viewport > *:not(:first-child) {
+    margin-bottom: 100px;
+}
 h1 {
     font-size: 4em;
     color: #c4d9e7;
@@ -177,9 +178,15 @@ ol li {
     text-align: center;
     font-style: italic;
 }
+#pop{
+    max-width: 200px;
+    margin: auto;
+}
 #pop p {
     margin-bottom: none;
 }
+
+
 @media only screen and (min-width: 600px) {
     h1 {
         font-size: 2em;
@@ -200,6 +207,9 @@ ol li {
         flex-wrap: wrap;
         max-width: 300px;
         margin: auto;
+    }
+    .bottom-text h2{
+        margin-bottom: 0;
     }
     .water {
         margin-top: 40px;
