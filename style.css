@@ -16,7 +16,7 @@ row-gap: 100px;
 .viewport {
     display: flex;
     flex-direction: column;
-    row-gap: 3rem;
+     row-gap: 48px;
 }
 
 h1 {
