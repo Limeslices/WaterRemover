@@ -51,7 +51,6 @@
     justify-content: space-between;
     flex-wrap: wrap;
     column-gap: 2rem;
-    row-gap: 2rem;
 }
 .flexcards .jumbo {
     width: 48%;
@@ -93,6 +92,10 @@ article h2 {
     height: 200px;
     padding: 30px;
     border-radius: 20px;
+}
+
+.mb-100 {
+   margin-bottom: 40px;
 }
 
 @media only screen and (min-width: 700px) {
