@@ -56,7 +56,7 @@ function playNote() {
       button.innerHTML = `Fix My Speakers`;
       button.style.filter = "hue-rotate(0deg)"
       loadingb.style.display = 'none'
-      
+      bar.value = 0;
     }, 30 * 1000);
 
 }
