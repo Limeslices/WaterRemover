@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="dist/loading-bar.css"/>
     <link rel="stylesheet" href="style.css">
-    <title>Online iPhone Water Remover</title>
-    <link rel="stylesheet" href="transition.min.css">
     <!-- Google -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-TQ1VDBM62S"></script>
     <script>
@@ -16,7 +16,7 @@
     gtag('js', new Date());
     gtag('config', 'G-TQ1VDBM62S');
     </script>
-    <script src="https://kit.fontawesome.com/8cae5614c8.js" crossorigin="anonymous"></script>
+    <!-- favIcon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -24,77 +24,71 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" type="text/css" href="dist/loading-bar.css"/>
-
+    <!-- Title -->
+    <title>Water Remover</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="../index.html">
-                <img src="../imgs/water.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
-                Remove Water
-              </a>
-          <button class="navbar-toggler" onclick=" hider()" id="navbutt"type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="margin-right: 0; margin-left: 0; box-shadow: none;">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse  justify-content-end" id="navbarNav">
-            <ul class="navbar-nav just">
-              <li class="nav-item ">
-                <a class="nav-link active unbold"  aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="blog/index.html">Blogs</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="blog/index.html#about">About</a>
-              </li>
-            </ul>
-          </div>
+
+    <nav>
+        <img class="water" src="imgs/water.svg" alt="">
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
         </div>
-      </nav>
-    <main>
-        
-        <div class="viewport">
-            <h1 id="title">iPhone Water Remover</h1>
-            
-            <img class="water" src="imgs/water.svg" alt="">
-           <div class="wrapping">
-            <div class="holder">
-                <ol>
-                    <li>Wipe phone off</li>
-                    <li>Set volume to <span><i>100% </i></span></li>
-                    <li>Place phone down <br> and tap here:</li>
-                    
-                </ol> 
-               
-            </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog/index.html#about">About</a></li>
+            <li><a href="blog/index.html">More Help</a></li>
            
-            <button onclick="playNote();  replace();" class="ld ld-blur-in">Eject Water</button>
-            <div class="ldBar label-center " data-fill-background="#fff" data-type="fill"></div>
-        </div>
-        <div class="wrapping">
-        <p class="me pb-0" id="pop"> Need <a  href="blog/index.html">More ways to remove water from your phone</a>? <Br>Check out our blog:</p>
-            <a href="blog/index.html"><button onclick="" id="blog">Blog</button></a>
-        </div>
-        <div class="bottom">
-            <div class="bottom-text">
-                <p>This can help with the<i> muffled sound</i> water creates against the speakers.</p>
+        </ul>
+    </nav>
 
-                <div class="questions">
-                    <h3>How does this work?</h3>
-                    <p>A pure sine wave sound is produced at 165hz which is perfect for shaking your speakers and removing excess water.</p>
-                 </div>
-                
-                <h2 id="made">Site made by: <a href="https://twitter.com/byrd_kohl" target="_blank">@byrd_kohl</a></h2>
+    <section class="landing">
+        <div class="wrapper">
+            <section>
+                <div class="catch">
+                    <h1 class="bold">Water in your phone? Fix your device quickly here!</h1>
+                    <img src="imgs/phone.svg" class="phone">
+                </div>
+            </section>
+            <div class="main-text">
+                <section>
+                    <p><span class="bold-big">STEP ONE:</span> Turn Volume to <span class="blue bold">100%</span></p>
+                    <br>
+                    <p id="smaller"><span class="bold-big">STEP TWO:</span>Step two: Tap the button  below to push air out of your phone and “Fix My Speakers”</p>
+                </section>
+
             </div>
+            <div class="buttons">
+
+                    <button class="btn rot-135" onclick="playNote(); playanimation();">Fix My Speakers</button>
+
+                  
+
+                    <a id="more" href="blog/index.html" class="button2 b-blue rot-135">More Help</a>
+            </div>
+            <div class="holder">
+
+            <div class="ldBar label-center"
+            style="width:100%;height:60px",
+            data-stroke="data:ldbar/res,gradient(0,1, #0576ff, #24f8ff)",
+            data-value="50",
+            data-preset="circle"
+            ></div>
+<!-- 
+            <div class="ldBar label-center"
+            style="width:100%;height:60px",
+            data-stroke="data:ldbar/res,gradient(0,1, #0576ff, #24f8ff)",
+            data-value="50",
+            data-preset="circle"
+            ></div> -->
 
         </div>
-    </main>
-    
+        </div>
+    </section>
 
-    
     <script type="text/javascript" src="dist/loading-bar.js"></script>
     <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </body>
 </html>

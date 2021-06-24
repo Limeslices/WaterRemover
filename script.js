@@ -1,16 +1,24 @@
+const hamburger = document.querySelector('.hamburger');
+const navlinks = document.querySelector('.nav-links');
+const links = document.querySelector('.nav-links li');
+
+hamburger.addEventListener('click', () => {
+    navlinks.classList.toggle("open");
+    links.forEach(link => {
+        link.classList.toggle('fade');
+    });
+})
+
 // create web audio api context
 //<i class="fas fa-sync fa-spin"></i> Extracting Water...
-const button = document.querySelector('button.ld'); 
-const stay = document.querySelector('p.stay');
-const navbutton = document.querySelector('button#navbutt');
-const bottom = document.querySelector('a#more');
+const button = document.querySelector('button.btn'); 
 var html = `<i class="fas fa-sync fa-spin"></i> Ejecting Water...`;
 var bar = new ldBar(
   '.ldBar', /* Element or Selector for target element */
   {
-    "stroke": 'rgb(170,225,233)',
-    "stroke-width": 10,
-    "preset": "line",
+    "stroke": 'data:ldbar/res,gradient(0,1, #0576ff, #24f8ff)',
+    "stroke-width": 1,
+    "preset": "circle",
     "value": 0,
     "duration": 33
     
@@ -45,7 +53,9 @@ function playNote() {
     function() {
       ding.play();
       button.disabled = false
-      button.innerHTML = `Eject Water`;
+      button.innerHTML = `Fix My Speakers`;
+      button.style.filter = "hue-rotate(0deg)"
+      loadingb.style.display = 'none'
       
     }, 30 * 1000);
 
